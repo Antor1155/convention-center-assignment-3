@@ -96,7 +96,7 @@
     ---------------------->
     <main class="py-5">
         <!-- bonus section with toast  -->
-        <section class="py-5 position-relative">
+        <section class="py-5 position-relative mt-5">
             <div class="pb-5">
                 <h1 class="text-center">We witness every success you achive !!</h1>
                 <h2 class="text-center">since <span class=" text-warning display-3 fw-bold">2000 </span></h2>
@@ -125,31 +125,27 @@
                 <img src="bonus-sec/bonus20.jpeg" alt="">
             </main>
             <!-- toast section  -->
-            <section>
-
-                  <!-- example toast  -->
-                  <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false" show.bs.toast='show'>
-                    <div class="toast-header">
-                      <img src="..." class="rounded me-2" alt="...">
-                      <strong class="me-auto">Bootstrap</strong>
-                      <small>11 mins ago</small>
-                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                      Hello, world! This is a toast message.
+            <section class="border-start border-5 border-primary position-absolute top-0 end-0 mt-5 ">
+                <div class="toast align-items-center show border-5" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        <img src="icons/Vector.svg" alt="" style="display: inline;">
+                        <strong class="ps-4">20% off on next booking</strong>
+                     </div>
+                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                   </div>
             </section>
         </section>
 
         <!-- careds with price and packages start here  -->
-        <section class="py-5">
+        <section class="py-5 my-5">
             <h1 class="text-center pb-5">OUR PACKAGES</h1>
             <!-- cards section  -->
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
 
-                    <!-- cards col using grid  -->
+                    <!-- cards 1 col using grid  -->
                     <div class="col rounded-3">
                       <div class="card h-100 ">  
                         <div class="card-body">
@@ -168,7 +164,7 @@
                         </div>
                       </div>
                     </div>
-                    <!-- cards col using grid  -->
+                    <!-- cards 2 col using grid  -->
                     <div class="col rounded-3">
                       <div class="card h-100">  
                         <div class="card-body">
@@ -192,24 +188,31 @@
                     <!-- -----------------------------------------
                         cards col using grid with special features
                     --------------------------------------------->
-                    <div class="col rounded-3">
-                      <div class="card h-100 bg-primary">  
-                        <div class="card-body">
-                            <h1 class="card-title">$800</h1>
-                            <h2 class="card-title">Wedding plus</h2>
-                            <p class="card-text">For most weddings with
-                                premium plans</p>
-                            <ul class="card-text list-unstyled">
-                                <li><i class="far fa-check-circle"></i> &nbsp; Full space access</li>
-                                <li><i class="far fa-check-circle"></i> &nbsp; Dedicated team</li>
-                                <li><i class="far fa-check-circle"></i> &nbsp; Buffet food</li>
-                                <li><i class="far fa-check-circle"></i> &nbsp; premium Decoration</li>
-                                <li><i class="far fa-check-circle"></i> &nbsp; pay as plan
-                                </li>
-                            </ul>  
-                            <button class="btn text-primary mx-auto w-100 bg-white">Choose Plan</button>
+                    <div class="col rounded-3 position-relative">                    
+                        <div class="card h-100 bg-primary">  
+                            <div class="card-body">
+                                <h1 class="card-title">$800</h1>
+                                <h2 class="card-title">Wedding plus</h2>
+                                <p class="card-text">For most weddings with
+                                    premium plans</p>
+                                <ul class="card-text list-unstyled">
+                                    <li><i class="far fa-check-circle"></i> &nbsp; Full space access</li>
+                                    <li><i class="far fa-check-circle"></i> &nbsp; Dedicated team</li>
+                                    <li><i class="far fa-check-circle"></i> &nbsp; Buffet food</li>
+                                    <li><i class="far fa-check-circle"></i> &nbsp; premium Decoration</li>
+                                    <li><i class="far fa-check-circle"></i> &nbsp; pay as plan
+                                    </li>
+                                </ul>  
+                                <button class="btn text-primary mx-auto w-100 bg-white">Choose Plan</button>
+                            </div>
                         </div>
-                      </div>
+                          <!-- badge part starts -->
+                          <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+                            <strong class="fs-5">special</strong>
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                          <!-- badge part ends  -->
+
                     </div>
                     <!-- cards col using grid  -->
                     <div class="col rounded-3">
