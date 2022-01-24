@@ -11,12 +11,15 @@
     <!-- fontawesome kit link  -->
     <script src="https://kit.fontawesome.com/655b3d0a89.js" crossorigin="anonymous"></script>
 
+    <!-- vanila css link  -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- header of the website  -->
     <header>
         <!-- navigation bar  -->
-        <section>
+        <section class="py-1">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#"><h1>Happy Center</h1></a>
@@ -87,11 +90,61 @@
         </main>
 
     </header>
-    <!-- main part of body  -->
-    <main>
+
+    <!--------------------- 
+        main part of body  
+    ---------------------->
+    <main class="py-5">
+        <!-- bonus section with toast  -->
+        <section class="py-5 position-relative">
+            <div class="pb-5">
+                <h1 class="text-center">We witness every success you achive !!</h1>
+                <h2 class="text-center">since <span class=" text-warning display-3 fw-bold">2000 </span></h2>
+                <p class="text-center lead fw-bolder">Lets be our guest and share the happy moments together</p>
+            </div>
+            <main class="d-flex flex-wrap justify-content-around bonus-img">
+                <img src="bonus-sec/bonus1.jpeg" alt="">
+                <img src="bonus-sec/bonus2.jpeg" alt="">
+                <img src="bonus-sec/bonus3.jpeg" alt="">
+                <img src="bonus-sec/bonus4.jpeg" alt="">
+                <img src="bonus-sec/bonus5.jpeg" alt="">
+                <img src="bonus-sec/bonus6.jpeg" alt="">
+                <img src="bonus-sec/bonus7.jpeg" alt="">
+                <img src="bonus-sec/bonus8.jpeg" alt="">
+                <img src="bonus-sec/bonus9.jpeg" alt="">
+                <img src="bonus-sec/bonus10.jpeg" alt="">
+                <img src="bonus-sec/bonus11.jpeg" alt="">
+                <img src="bonus-sec/bonus12.jpeg" alt="">
+                <img src="bonus-sec/bonus13.jpeg" alt="">
+                <img src="bonus-sec/bonus14.jpeg" alt="">
+                <img src="bonus-sec/bonus15.jpeg" alt="">
+                <img src="bonus-sec/bonus16.jpeg" alt="">
+                <img src="bonus-sec/bonus17.jpeg" alt="">
+                <img src="bonus-sec/bonus18.jpeg" alt="">
+                <img src="bonus-sec/bonus19.jpeg" alt="">
+                <img src="bonus-sec/bonus20.jpeg" alt="">
+            </main>
+            <!-- toast section  -->
+            <section>
+
+                  <!-- example toast  -->
+                  <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false" show.bs.toast='show'>
+                    <div class="toast-header">
+                      <img src="..." class="rounded me-2" alt="...">
+                      <strong class="me-auto">Bootstrap</strong>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Hello, world! This is a toast message.
+                    </div>
+                  </div>
+            </section>
+        </section>
+
         <!-- careds with price and packages start here  -->
-        <section>
-            <h1 class="text-center">OUR PACKAGES</h1>
+        <section class="py-5">
+            <h1 class="text-center pb-5">OUR PACKAGES</h1>
             <!-- cards section  -->
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
@@ -185,8 +238,8 @@
             </div>
         </section>
         <!-- frequently asked section  -->
-        <section class="container ">
-            <h1 class="text-center">Frequently asked questions</h1>
+        <section class="container py-5">
+            <h1 class="text-center pb-5">Frequently asked questions</h1>
             <main class="row gx-5">
                 <!-- accordian section  -->
                 <section class="col-6 ">
@@ -194,7 +247,7 @@
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                What’s the difference between event design and
+                                What's the difference between event design and
                                 event planning? 
                             </button>
                           </h2>
@@ -253,6 +306,18 @@
         </section>
     </main>
 
+
+    <!-- footer starts here  -->
+    <footer class="bg-dark container-fluid d-flex justify-content-around align-items-center py-5">
+        <p class="text-white"><small>&copy; 2025 happy center,  All rights reserved</small></p>
+        <div>
+            <h3 class="text-white">Get APPS</h3>
+            <div class="img-size">
+                <a href=""><img src="images/apple2.png" alt="image of apple store"></a>
+                <a href=""><img src="images/google2.png" alt="image of google store"></a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- bootstrap js script  -->
