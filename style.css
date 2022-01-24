@@ -1,6 +1,7 @@
 /* i am fron china, can't access google and no way to get access to google icon correct 
 one with limited resource. so had to
 take any picture i get and resize it to be useable */
+/* app store image sizing  */
 .img-size img{
     width: 70px;
     height: 70px;
@@ -11,3 +12,14 @@ take any picture i get and resize it to be useable */
     height: 150px;
     margin: 1rem;
 }
+@media only screen and (max-width:1024px) {
+    /* carosel section image  */
+    .caro-img{
+        height: 584px;
+    }
+    /* accordian section image  */
+    .accordina-image{
+        align-self: center;
+    }
+}
+
